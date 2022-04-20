@@ -37,55 +37,59 @@
 //PROTO FUNCIONES
 void setup(void);
 
+//CONFIGURACION PRINCIPAL
 void setup(void){
-    ANSEL = 0b00000001;
-    ANSELH = 0;
+    ANSEL = 0b00000001;         // PORTA PIN0 COMO ANALOGICO, RESTO COMO DIGITALES
+    ANSELH = 0;                 // DEMAS PUERTOS COMO DIGITALES
     
-    TRISA = 0b00000001;
-    PORTA = 0;
+    TRISA = 0b00000001;         // PORTA PIN0 COMO ENTRADA, RESTO COMO SALIDA
+    PORTA = 0;                  // LIMPIEZA DEL PORTA
     
-    TRISC = 0;
-    PORTC = 0;
+    TRISC = 0;                  // PORTC COMO SALIDA
+    PORTC = 0;                  // LIMPIEZA DEL PORTC
     
     //OSCCONFIC
     OSCCONbits.IRCF = 0b0110;   // FRECUENCIA DE OSCILADOR INTERNO (4MHz)
     OSCCONbits.SCS  = 1;        // RELOJ INTERNO
     
     //ADC config
-    ADCON0bits.ADCS = 0b01;
+    ADCON0bits.ADCS = 0b01;     // Fosc/8
     
-    ADCON1bits.VCFG0 = 0;
-    ADCON1bits.VCFG1 = 1;
+    ADCON1bits.VCFG0 = 0;       // USO DE VDD COMO VOLTAJE DE REFERENCIA INTERNO
+    ADCON1bits.VCFG1 = 1;       // USO DE VSS COMO VOLTAJE DE REFERENCIA INTERNO
     
-    ADCON0bits.CHS = 0b0000;
-    ADCON1bits.ADFM = 0;
-    ADCON0bits.ADON = 1;
+    ADCON0bits.CHS = 0b0000;    // SELECCION DE PORTA PIN0 (AN0) COMO ENTRADA DE ADC
+    ADCON1bits.ADFM = 0;        // FORMATO DE BITS JUSTIFICADOS A LA IZQUIERDA
+    ADCON0bits.ADON = 1;        // HABILITACION DE MODULO DE ADC
     __delay_us(40);
     
     //CONFIG DE INTERRUPCIONES
     INTCONbits.GIE = 1;         // HABILITAR INTERRUPCIONES GLOBALES
-    INTCONbits.PEIE = 1;
-    PIE1bits.ADIE = 1;
-    PIR1bits.ADIF = 0; 
+    INTCONbits.PEIE = 1;        // HABILITAR INTERRUPCIONES EN PERIFERICOS
+    PIE1bits.ADIE = 1;          // HABILITAR INTERRUPCION DE ADC
+    PIR1bits.ADIF = 0;          // LIMPIEZA DE BANDERA DE INTERRUPCION DE ADC
 }
 
+//INTERRUPCIONES
 void __interrupt() isr(void){
-    if (PIR1bits.ADIF){
-        if (ADCON0bits.CHS == 0){
-            PORTC = ADRESH;
+    if (PIR1bits.ADIF){         // REVISAR INTERRUPCION DE ADC
+        if (ADCON0bits.CHS == 0){   // REVISAR SI LA INTERRUPCION FUE EN AN0
+            PORTC = ADRESH;         // CARGAR BITS MAS SIGNIFICATIVOS AL PORTC
         }
-        PIR1bits.ADIF = 0;
+        PIR1bits.ADIF = 0;          // LIMPIEZA DE BANDERA DE INTERRUPCION ADC
     }
     return;
 }
 
+//CICLO MAIN
 void main(void) {
-    setup();
+    //EJECUCION CONFIG
+    setup();    
     
-    
+    //LOOP MAIN
     while(1){
-        if (ADCON0bits.GO == 0){
-            ADCON0bits.GO = 1;
+        if (ADCON0bits.GO == 0){    // REVISAR SI HAY PROCESO DE CONVERSION
+            ADCON0bits.GO = 1;      // DE NO HABER, INICIAR PROCESO DE CONVERSION
         }   
     }
     return;
