@@ -39,14 +39,16 @@ void setup(void);
 
 //CONFIGURACION PRINCIPAL
 void setup(void){
-    ANSEL = 0b00000001;         // PORTA PIN0 COMO ANALOGICO, RESTO COMO DIGITALES
+    ANSEL = 0b00000011;         // PORTA PIN0 COMO ANALOGICO, RESTO COMO DIGITALES
     ANSELH = 0;                 // DEMAS PUERTOS COMO DIGITALES
     
-    TRISA = 0b00000001;         // PORTA PIN0 COMO ENTRADA, RESTO COMO SALIDA
+    TRISA = 0b00000011;         // PORTA PIN0 COMO ENTRADA, RESTO COMO SALIDA
     PORTA = 0;                  // LIMPIEZA DEL PORTA
     
     TRISC = 0;                  // PORTC COMO SALIDA
+    TRISD = 0;                  // PORTD COMO SALIDA
     PORTC = 0;                  // LIMPIEZA DEL PORTC
+    PORTD = 0;                  // LIMPIEZA DEL PORTD
     
     //OSCCONFIC
     OSCCONbits.IRCF = 0b0110;   // FRECUENCIA DE OSCILADOR INTERNO (4MHz)
@@ -73,8 +75,11 @@ void setup(void){
 //INTERRUPCIONES
 void __interrupt() isr(void){
     if (PIR1bits.ADIF){         // REVISAR INTERRUPCION DE ADC
-        if (ADCON0bits.CHS == 0){   // REVISAR SI LA INTERRUPCION FUE EN AN0
+        if (ADCON0bits.CHS == 0){   // REVISAR SI ESTA ACTIVADO AN0
             PORTC = ADRESH;         // CARGAR BITS MAS SIGNIFICATIVOS AL PORTC
+        }
+        else if (ADCON0bits.CHS == 1){  // REVISAR SI ESTA ACTIVADO AN1
+            PORTD = ADRESH;             // CARGAR BITS MAS SIGNIFICATIVOS AL PORTD
         }
         PIR1bits.ADIF = 0;          // LIMPIEZA DE BANDERA DE INTERRUPCION ADC
     }
@@ -89,6 +94,13 @@ void main(void) {
     //LOOP MAIN
     while(1){
         if (ADCON0bits.GO == 0){    // REVISAR SI HAY PROCESO DE CONVERSION
+            if (ADCON0bits.CHS == 0){           // REVISAR SI SE ENCUENTRA EN EL CANAL 0
+                ADCON0bits.CHS = 0b0001;        // SI SI, CAMBIAR A CANAL 1
+            }
+            else if (ADCON0bits.CHS == 1){      // REVISAR SI SE ENCUENTRA EN EL CANAL 1
+                ADCON0bits.CHS = 0b0000;        // SI SI, CAMBIAR A CANAL 0
+            }
+            __delay_us(40);                     // TIEMPO DE ESPERA DE CAMBIO
             ADCON0bits.GO = 1;      // DE NO HABER, INICIAR PROCESO DE CONVERSION
         }   
     }

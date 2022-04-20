@@ -2755,15 +2755,18 @@ extern int printf(const char *, ...);
 
 void setup(void);
 
+
 void setup(void){
-    ANSEL = 0b00000001;
+    ANSEL = 0b00000011;
     ANSELH = 0;
 
-    TRISA = 0b00000001;
+    TRISA = 0b00000011;
     PORTA = 0;
 
     TRISC = 0;
+    TRISD = 0;
     PORTC = 0;
+    PORTD = 0;
 
 
     OSCCONbits.IRCF = 0b0110;
@@ -2787,22 +2790,35 @@ void setup(void){
     PIR1bits.ADIF = 0;
 }
 
+
 void __attribute__((picinterrupt(("")))) isr(void){
     if (PIR1bits.ADIF){
         if (ADCON0bits.CHS == 0){
             PORTC = ADRESH;
+        }
+        else if (ADCON0bits.CHS == 1){
+            PORTD = ADRESH;
         }
         PIR1bits.ADIF = 0;
     }
     return;
 }
 
+
 void main(void) {
+
     setup();
 
 
     while(1){
         if (ADCON0bits.GO == 0){
+            if (ADCON0bits.CHS == 0){
+                ADCON0bits.CHS = 0b0001;
+            }
+            else if (ADCON0bits.CHS == 1){
+                ADCON0bits.CHS = 0b0000;
+            }
+            _delay((unsigned long)((40)*(4000000/4000000.0)));
             ADCON0bits.GO = 1;
         }
     }

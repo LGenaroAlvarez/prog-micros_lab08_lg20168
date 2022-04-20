@@ -14,13 +14,13 @@
 $dist/default/production\prog-micros_lab08_lg20168.X.production.o
 cinit CODE 0 F F 4 2 1
 idloc IDLOC 5 2000 2000 4 2 1
-text1 CODE 0 13 13 3A 2 1
-text2 CODE 0 4D 4D 19 2 1
-maintext CODE 0 66 66 10 2 1
-cstackCOMMON COMMON 1 70 70 4 1 1
+text1 CODE 0 13 13 3C 2 1
+text2 CODE 0 7E 7E 25 2 1
+maintext CODE 0 4F 4F 2F 2 1
+cstackCOMMON COMMON 1 70 70 5 1 1
 intentry CODE 0 4 4 8 2 1
 config CONFIG 4 2007 2007 2 2 1
-$C:\Users\luisg\AppData\Local\Temp\xcAsm8c.o
+$C:\Users\luisg\AppData\Local\Temp\xcAscrk.o
 idloc IDLOC 5 2000 2000 4 2 1
 reset_vec CODE 0 0 0 3 2 1
 end_init CODE 0 C C 3 2 1
@@ -40,21 +40,21 @@ BANK1 A0-EF 1
 BANK2 110-16F 1
 BANK3 190-1EF 1
 CONST 3-3 2
-CONST 76-1FFF 2
+CONST A3-1FFF 2
 ENTRY 3-3 2
-ENTRY 76-1FFF 2
+ENTRY A3-1FFF 2
 CODE 3-3 2
-CODE 76-1FFF 2
+CODE A3-1FFF 2
 SFR0 0-1F 1
 SFR1 80-9F 1
 SFR2 100-10F 1
 SFR3 180-18F 1
-COMMON 74-7D 1
+COMMON 75-7D 1
 EEDATA 2100-21FF 2
 STRCODE 3-3 2
-STRCODE 76-1FFF 2
+STRCODE A3-1FFF 2
 STRING 3-3 2
-STRING 76-1FFF 2
+STRING A3-1FFF 2
 # %LINETAB Section
 # This section enumerates the file/line to address mappings.
 # The beginning of the section is indicated by %LINETAB.
@@ -69,44 +69,58 @@ STRING 76-1FFF 2
 # All other numeric values are in decimal.
 %LINETAB
 $dist/default/production\prog-micros_lab08_lg20168.X.production.o
-F cinit CODE >454:C:\Users\luisg\AppData\Local\Temp\xcAsm8c.s
-F cinit CODE >457:C:\Users\luisg\AppData\Local\Temp\xcAsm8c.s
-F cinit CODE >463:C:\Users\luisg\AppData\Local\Temp\xcAsm8c.s
-F cinit CODE >465:C:\Users\luisg\AppData\Local\Temp\xcAsm8c.s
-10 cinit CODE >466:C:\Users\luisg\AppData\Local\Temp\xcAsm8c.s
-4 intentry CODE >72:C:\Users\luisg\MPLABXProjects\prog-micros_lab08_lg20168.X\lab08_main-20168.c
-4D text2 CODE >72:C:\Users\luisg\MPLABXProjects\prog-micros_lab08_lg20168.X\lab08_main-20168.c
-4D text2 CODE >73:C:\Users\luisg\MPLABXProjects\prog-micros_lab08_lg20168.X\lab08_main-20168.c
-53 text2 CODE >74:C:\Users\luisg\MPLABXProjects\prog-micros_lab08_lg20168.X\lab08_main-20168.c
-58 text2 CODE >74:C:\Users\luisg\MPLABXProjects\prog-micros_lab08_lg20168.X\lab08_main-20168.c
-5C text2 CODE >75:C:\Users\luisg\MPLABXProjects\prog-micros_lab08_lg20168.X\lab08_main-20168.c
-5E text2 CODE >77:C:\Users\luisg\MPLABXProjects\prog-micros_lab08_lg20168.X\lab08_main-20168.c
-5F text2 CODE >80:C:\Users\luisg\MPLABXProjects\prog-micros_lab08_lg20168.X\lab08_main-20168.c
-13 text1 CODE >40:C:\Users\luisg\MPLABXProjects\prog-micros_lab08_lg20168.X\lab08_main-20168.c
+F cinit CODE >458:C:\Users\luisg\AppData\Local\Temp\xcAscrk.s
+F cinit CODE >461:C:\Users\luisg\AppData\Local\Temp\xcAscrk.s
+F cinit CODE >467:C:\Users\luisg\AppData\Local\Temp\xcAscrk.s
+F cinit CODE >469:C:\Users\luisg\AppData\Local\Temp\xcAscrk.s
+10 cinit CODE >470:C:\Users\luisg\AppData\Local\Temp\xcAscrk.s
+4 intentry CODE >76:C:\Users\luisg\MPLABXProjects\prog-micros_lab08_lg20168.X\lab08_main-20168.c
+7E text2 CODE >76:C:\Users\luisg\MPLABXProjects\prog-micros_lab08_lg20168.X\lab08_main-20168.c
+7E text2 CODE >77:C:\Users\luisg\MPLABXProjects\prog-micros_lab08_lg20168.X\lab08_main-20168.c
+84 text2 CODE >78:C:\Users\luisg\MPLABXProjects\prog-micros_lab08_lg20168.X\lab08_main-20168.c
+89 text2 CODE >78:C:\Users\luisg\MPLABXProjects\prog-micros_lab08_lg20168.X\lab08_main-20168.c
+8D text2 CODE >79:C:\Users\luisg\MPLABXProjects\prog-micros_lab08_lg20168.X\lab08_main-20168.c
+8F text2 CODE >80:C:\Users\luisg\MPLABXProjects\prog-micros_lab08_lg20168.X\lab08_main-20168.c
+90 text2 CODE >81:C:\Users\luisg\MPLABXProjects\prog-micros_lab08_lg20168.X\lab08_main-20168.c
+95 text2 CODE >81:C:\Users\luisg\MPLABXProjects\prog-micros_lab08_lg20168.X\lab08_main-20168.c
+99 text2 CODE >82:C:\Users\luisg\MPLABXProjects\prog-micros_lab08_lg20168.X\lab08_main-20168.c
+9B text2 CODE >84:C:\Users\luisg\MPLABXProjects\prog-micros_lab08_lg20168.X\lab08_main-20168.c
+9C text2 CODE >87:C:\Users\luisg\MPLABXProjects\prog-micros_lab08_lg20168.X\lab08_main-20168.c
 13 text1 CODE >41:C:\Users\luisg\MPLABXProjects\prog-micros_lab08_lg20168.X\lab08_main-20168.c
-17 text1 CODE >42:C:\Users\luisg\MPLABXProjects\prog-micros_lab08_lg20168.X\lab08_main-20168.c
-18 text1 CODE >44:C:\Users\luisg\MPLABXProjects\prog-micros_lab08_lg20168.X\lab08_main-20168.c
-1C text1 CODE >45:C:\Users\luisg\MPLABXProjects\prog-micros_lab08_lg20168.X\lab08_main-20168.c
-1F text1 CODE >47:C:\Users\luisg\MPLABXProjects\prog-micros_lab08_lg20168.X\lab08_main-20168.c
-22 text1 CODE >48:C:\Users\luisg\MPLABXProjects\prog-micros_lab08_lg20168.X\lab08_main-20168.c
-25 text1 CODE >51:C:\Users\luisg\MPLABXProjects\prog-micros_lab08_lg20168.X\lab08_main-20168.c
-2B text1 CODE >52:C:\Users\luisg\MPLABXProjects\prog-micros_lab08_lg20168.X\lab08_main-20168.c
-2C text1 CODE >55:C:\Users\luisg\MPLABXProjects\prog-micros_lab08_lg20168.X\lab08_main-20168.c
-32 text1 CODE >57:C:\Users\luisg\MPLABXProjects\prog-micros_lab08_lg20168.X\lab08_main-20168.c
-35 text1 CODE >58:C:\Users\luisg\MPLABXProjects\prog-micros_lab08_lg20168.X\lab08_main-20168.c
-36 text1 CODE >60:C:\Users\luisg\MPLABXProjects\prog-micros_lab08_lg20168.X\lab08_main-20168.c
-3A text1 CODE >61:C:\Users\luisg\MPLABXProjects\prog-micros_lab08_lg20168.X\lab08_main-20168.c
-3D text1 CODE >62:C:\Users\luisg\MPLABXProjects\prog-micros_lab08_lg20168.X\lab08_main-20168.c
-40 text1 CODE >63:C:\Users\luisg\MPLABXProjects\prog-micros_lab08_lg20168.X\lab08_main-20168.c
-44 text1 CODE >66:C:\Users\luisg\MPLABXProjects\prog-micros_lab08_lg20168.X\lab08_main-20168.c
-45 text1 CODE >67:C:\Users\luisg\MPLABXProjects\prog-micros_lab08_lg20168.X\lab08_main-20168.c
-46 text1 CODE >68:C:\Users\luisg\MPLABXProjects\prog-micros_lab08_lg20168.X\lab08_main-20168.c
-49 text1 CODE >69:C:\Users\luisg\MPLABXProjects\prog-micros_lab08_lg20168.X\lab08_main-20168.c
-4C text1 CODE >70:C:\Users\luisg\MPLABXProjects\prog-micros_lab08_lg20168.X\lab08_main-20168.c
-66 maintext CODE >82:C:\Users\luisg\MPLABXProjects\prog-micros_lab08_lg20168.X\lab08_main-20168.c
-66 maintext CODE >83:C:\Users\luisg\MPLABXProjects\prog-micros_lab08_lg20168.X\lab08_main-20168.c
-6B maintext CODE >87:C:\Users\luisg\MPLABXProjects\prog-micros_lab08_lg20168.X\lab08_main-20168.c
-71 maintext CODE >88:C:\Users\luisg\MPLABXProjects\prog-micros_lab08_lg20168.X\lab08_main-20168.c
+13 text1 CODE >42:C:\Users\luisg\MPLABXProjects\prog-micros_lab08_lg20168.X\lab08_main-20168.c
+17 text1 CODE >43:C:\Users\luisg\MPLABXProjects\prog-micros_lab08_lg20168.X\lab08_main-20168.c
+18 text1 CODE >45:C:\Users\luisg\MPLABXProjects\prog-micros_lab08_lg20168.X\lab08_main-20168.c
+1C text1 CODE >46:C:\Users\luisg\MPLABXProjects\prog-micros_lab08_lg20168.X\lab08_main-20168.c
+1F text1 CODE >48:C:\Users\luisg\MPLABXProjects\prog-micros_lab08_lg20168.X\lab08_main-20168.c
+22 text1 CODE >49:C:\Users\luisg\MPLABXProjects\prog-micros_lab08_lg20168.X\lab08_main-20168.c
+23 text1 CODE >50:C:\Users\luisg\MPLABXProjects\prog-micros_lab08_lg20168.X\lab08_main-20168.c
+26 text1 CODE >51:C:\Users\luisg\MPLABXProjects\prog-micros_lab08_lg20168.X\lab08_main-20168.c
+27 text1 CODE >54:C:\Users\luisg\MPLABXProjects\prog-micros_lab08_lg20168.X\lab08_main-20168.c
+2D text1 CODE >55:C:\Users\luisg\MPLABXProjects\prog-micros_lab08_lg20168.X\lab08_main-20168.c
+2E text1 CODE >58:C:\Users\luisg\MPLABXProjects\prog-micros_lab08_lg20168.X\lab08_main-20168.c
+34 text1 CODE >60:C:\Users\luisg\MPLABXProjects\prog-micros_lab08_lg20168.X\lab08_main-20168.c
+37 text1 CODE >61:C:\Users\luisg\MPLABXProjects\prog-micros_lab08_lg20168.X\lab08_main-20168.c
+38 text1 CODE >63:C:\Users\luisg\MPLABXProjects\prog-micros_lab08_lg20168.X\lab08_main-20168.c
+3C text1 CODE >64:C:\Users\luisg\MPLABXProjects\prog-micros_lab08_lg20168.X\lab08_main-20168.c
+3F text1 CODE >65:C:\Users\luisg\MPLABXProjects\prog-micros_lab08_lg20168.X\lab08_main-20168.c
+42 text1 CODE >66:C:\Users\luisg\MPLABXProjects\prog-micros_lab08_lg20168.X\lab08_main-20168.c
+46 text1 CODE >69:C:\Users\luisg\MPLABXProjects\prog-micros_lab08_lg20168.X\lab08_main-20168.c
+47 text1 CODE >70:C:\Users\luisg\MPLABXProjects\prog-micros_lab08_lg20168.X\lab08_main-20168.c
+48 text1 CODE >71:C:\Users\luisg\MPLABXProjects\prog-micros_lab08_lg20168.X\lab08_main-20168.c
+4B text1 CODE >72:C:\Users\luisg\MPLABXProjects\prog-micros_lab08_lg20168.X\lab08_main-20168.c
+4E text1 CODE >73:C:\Users\luisg\MPLABXProjects\prog-micros_lab08_lg20168.X\lab08_main-20168.c
+4F maintext CODE >90:C:\Users\luisg\MPLABXProjects\prog-micros_lab08_lg20168.X\lab08_main-20168.c
+4F maintext CODE >92:C:\Users\luisg\MPLABXProjects\prog-micros_lab08_lg20168.X\lab08_main-20168.c
+54 maintext CODE >96:C:\Users\luisg\MPLABXProjects\prog-micros_lab08_lg20168.X\lab08_main-20168.c
+5A maintext CODE >97:C:\Users\luisg\MPLABXProjects\prog-micros_lab08_lg20168.X\lab08_main-20168.c
+5F maintext CODE >97:C:\Users\luisg\MPLABXProjects\prog-micros_lab08_lg20168.X\lab08_main-20168.c
+63 maintext CODE >98:C:\Users\luisg\MPLABXProjects\prog-micros_lab08_lg20168.X\lab08_main-20168.c
+67 maintext CODE >99:C:\Users\luisg\MPLABXProjects\prog-micros_lab08_lg20168.X\lab08_main-20168.c
+68 maintext CODE >100:C:\Users\luisg\MPLABXProjects\prog-micros_lab08_lg20168.X\lab08_main-20168.c
+6D maintext CODE >100:C:\Users\luisg\MPLABXProjects\prog-micros_lab08_lg20168.X\lab08_main-20168.c
+71 maintext CODE >101:C:\Users\luisg\MPLABXProjects\prog-micros_lab08_lg20168.X\lab08_main-20168.c
+73 maintext CODE >103:C:\Users\luisg\MPLABXProjects\prog-micros_lab08_lg20168.X\lab08_main-20168.c
+77 maintext CODE >104:C:\Users\luisg\MPLABXProjects\prog-micros_lab08_lg20168.X\lab08_main-20168.c
 # %SYMTAB Section
 # An enumeration of all symbols in the program.
 # The beginning of the section is indicated by %SYMTAB.
@@ -120,24 +134,24 @@ F cinit CODE >465:C:\Users\luisg\AppData\Local\Temp\xcAsm8c.s
 # is the name of the object file in which the symbol was defined.
 %SYMTAB
 ___latbits 2 0 ABS 0 - dist/default/production\prog-micros_lab08_lg20168.X.production.o
-__Hspace_0 76 0 ABS 0 - -
-__Hspace_1 74 0 ABS 0 - -
+__Hspace_0 A3 0 ABS 0 - -
+__Hspace_1 75 0 ABS 0 - -
 __Hspace_2 0 0 ABS 0 - -
 __Hspace_3 0 0 ABS 0 - -
 __Hspace_4 4010 0 ABS 0 - -
 __Heeprom_data 0 0 EEDATA 3 eeprom_data -
 __Hstrings 0 0 ABS 0 strings -
-___sp 0 0 STACK 2 stack C:\Users\luisg\AppData\Local\Temp\xcAsm8c.o
-_main CC 0 CODE 0 maintext dist/default/production\prog-micros_lab08_lg20168.X.production.o
+___sp 0 0 STACK 2 stack C:\Users\luisg\AppData\Local\Temp\xcAscrk.o
+_main 9E 0 CODE 0 maintext dist/default/production\prog-micros_lab08_lg20168.X.production.o
 btemp 7E 0 ABS 0 - dist/default/production\prog-micros_lab08_lg20168.X.production.o
-start 18 0 CODE 0 init C:\Users\luisg\AppData\Local\Temp\xcAsm8c.o
+start 18 0 CODE 0 init C:\Users\luisg\AppData\Local\Temp\xcAscrk.o
 __Hpowerup 0 0 CODE 0 powerup -
-intlevel0 0 0 ENTRY 0 functab C:\Users\luisg\AppData\Local\Temp\xcAsm8c.o
-intlevel1 0 0 ENTRY 0 functab C:\Users\luisg\AppData\Local\Temp\xcAsm8c.o
-intlevel2 0 0 ENTRY 0 functab C:\Users\luisg\AppData\Local\Temp\xcAsm8c.o
-intlevel3 0 0 ENTRY 0 functab C:\Users\luisg\AppData\Local\Temp\xcAsm8c.o
-intlevel4 0 0 ENTRY 0 functab C:\Users\luisg\AppData\Local\Temp\xcAsm8c.o
-intlevel5 0 0 ENTRY 0 functab C:\Users\luisg\AppData\Local\Temp\xcAsm8c.o
+intlevel0 0 0 ENTRY 0 functab C:\Users\luisg\AppData\Local\Temp\xcAscrk.o
+intlevel1 0 0 ENTRY 0 functab C:\Users\luisg\AppData\Local\Temp\xcAscrk.o
+intlevel2 0 0 ENTRY 0 functab C:\Users\luisg\AppData\Local\Temp\xcAscrk.o
+intlevel3 0 0 ENTRY 0 functab C:\Users\luisg\AppData\Local\Temp\xcAscrk.o
+intlevel4 0 0 ENTRY 0 functab C:\Users\luisg\AppData\Local\Temp\xcAscrk.o
+intlevel5 0 0 ENTRY 0 functab C:\Users\luisg\AppData\Local\Temp\xcAscrk.o
 _OSCCONbits 8F 0 ABS 0 - dist/default/production\prog-micros_lab08_lg20168.X.production.o
 wtemp0 7E 0 ABS 0 - dist/default/production\prog-micros_lab08_lg20168.X.production.o
 __Hfunctab 0 0 ENTRY 0 functab -
@@ -145,10 +159,10 @@ __Hclrtext 0 0 ABS 0 clrtext -
 _ADRESH 1E 0 ABS 0 - dist/default/production\prog-micros_lab08_lg20168.X.production.o
 _ANSELH 189 0 ABS 0 - dist/default/production\prog-micros_lab08_lg20168.X.production.o
 __Lmaintext 0 0 ABS 0 maintext -
-___stackhi 0 0 ABS 0 - C:\Users\luisg\AppData\Local\Temp\xcAsm8c.o
-___stacklo 0 0 ABS 0 - C:\Users\luisg\AppData\Local\Temp\xcAsm8c.o
+___stackhi 0 0 ABS 0 - C:\Users\luisg\AppData\Local\Temp\xcAscrk.o
+___stacklo 0 0 ABS 0 - C:\Users\luisg\AppData\Local\Temp\xcAscrk.o
 start_initialization 1E 0 CODE 0 cinit dist/default/production\prog-micros_lab08_lg20168.X.production.o
-___int_sp 0 0 STACK 2 stack C:\Users\luisg\AppData\Local\Temp\xcAsm8c.o
+___int_sp 0 0 STACK 2 stack C:\Users\luisg\AppData\Local\Temp\xcAscrk.o
 __Hbank0 0 0 ABS 0 bank0 -
 __Hbank1 0 0 ABS 0 bank1 -
 __Hbank2 0 0 ABS 0 bank2 -
@@ -184,16 +198,16 @@ __Lsfr2 0 0 ABS 0 sfr2 -
 __Lsfr3 0 0 ABS 0 sfr3 -
 __Ltext 0 0 ABS 0 text -
 __HcstackCOMMON 0 0 ABS 0 cstackCOMMON -
-__S0 76 0 ABS 0 - -
-__S1 74 0 ABS 0 - -
+__S0 A3 0 ABS 0 - -
+__S1 75 0 ABS 0 - -
 __S3 0 0 ABS 0 - -
-_isr 9A 0 CODE 0 text2 dist/default/production\prog-micros_lab08_lg20168.X.production.o
+_isr FC 0 CODE 0 text2 dist/default/production\prog-micros_lab08_lg20168.X.production.o
 saved_w 7E 0 ABS 0 - dist/default/production\prog-micros_lab08_lg20168.X.production.o
-__end_of_isr CC 0 CODE 0 text2 dist/default/production\prog-micros_lab08_lg20168.X.production.o
+__end_of_isr 146 0 CODE 0 text2 dist/default/production\prog-micros_lab08_lg20168.X.production.o
 __Lintentry 8 0 CODE 0 intentry -
-reset_vec 0 0 CODE 0 reset_vec C:\Users\luisg\AppData\Local\Temp\xcAsm8c.o
+reset_vec 0 0 CODE 0 reset_vec C:\Users\luisg\AppData\Local\Temp\xcAscrk.o
 _PIE1bits 8C 0 ABS 0 - dist/default/production\prog-micros_lab08_lg20168.X.production.o
-__pmaintext CC 0 CODE 0 maintext dist/default/production\prog-micros_lab08_lg20168.X.production.o
+__pmaintext 9E 0 CODE 0 maintext dist/default/production\prog-micros_lab08_lg20168.X.production.o
 __Lcommon 0 0 ABS 0 common -
 __Lconfig 0 0 CONFIG 4 config -
 _ADCON0bits 1F 0 ABS 0 - dist/default/production\prog-micros_lab08_lg20168.X.production.o
@@ -211,7 +225,7 @@ __Hintentry 18 0 CODE 0 intentry -
 __Lstrings 0 0 ABS 0 strings -
 __Hreset_vec 6 0 CODE 0 reset_vec -
 __ptext1 26 0 CODE 0 text1 dist/default/production\prog-micros_lab08_lg20168.X.production.o
-__ptext2 9A 0 CODE 0 text2 dist/default/production\prog-micros_lab08_lg20168.X.production.o
+__ptext2 FC 0 CODE 0 text2 dist/default/production\prog-micros_lab08_lg20168.X.production.o
 __Lpowerup 0 0 CODE 0 powerup -
 __Leeprom_data 0 0 EEDATA 3 eeprom_data -
 __Lreset_vec 0 0 CODE 0 reset_vec -
@@ -220,13 +234,15 @@ __Lfunctab 0 0 ENTRY 0 functab -
 __Lclrtext 0 0 ABS 0 clrtext -
 __pcstackCOMMON 70 0 COMMON 1 cstackCOMMON dist/default/production\prog-micros_lab08_lg20168.X.production.o
 __Hend_init 1E 0 CODE 0 end_init -
-__end_of_main EC 0 CODE 0 maintext dist/default/production\prog-micros_lab08_lg20168.X.production.o
+__end_of_main FC 0 CODE 0 maintext dist/default/production\prog-micros_lab08_lg20168.X.production.o
 _ANSEL 188 0 ABS 0 - dist/default/production\prog-micros_lab08_lg20168.X.production.o
 _PORTA 5 0 ABS 0 - dist/default/production\prog-micros_lab08_lg20168.X.production.o
 _PORTC 7 0 ABS 0 - dist/default/production\prog-micros_lab08_lg20168.X.production.o
+_PORTD 8 0 ABS 0 - dist/default/production\prog-micros_lab08_lg20168.X.production.o
 _TRISA 85 0 ABS 0 - dist/default/production\prog-micros_lab08_lg20168.X.production.o
 _TRISC 87 0 ABS 0 - dist/default/production\prog-micros_lab08_lg20168.X.production.o
-__end_of_setup 9A 0 CODE 0 text1 dist/default/production\prog-micros_lab08_lg20168.X.production.o
+_TRISD 88 0 ABS 0 - dist/default/production\prog-micros_lab08_lg20168.X.production.o
+__end_of_setup 9E 0 CODE 0 text1 dist/default/production\prog-micros_lab08_lg20168.X.production.o
 __Hram 0 0 ABS 0 ram -
 __Lram 0 0 ABS 0 ram -
 interrupt_function 8 0 CODE 0 intentry dist/default/production\prog-micros_lab08_lg20168.X.production.o
@@ -258,8 +274,8 @@ __initialization 1E 0 CODE 0 cinit dist/default/production\prog-micros_lab08_lg2
 # and size are in units of delta. The file address is in units of bytes.
 # All other numeric quantities are in decimal.
 %SEGMENTS
-cstackCOMMON 1 70 70 4 1
-intentry 0 4 8 72 2
+cstackCOMMON 1 70 70 5 1
+intentry 0 4 8 9F 2
 reset_vec 0 0 0 3 2
 # %NOTES Section
 # This section contains data of all the note-psects.  The beginning of the section
