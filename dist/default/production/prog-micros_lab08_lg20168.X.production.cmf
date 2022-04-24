@@ -34,7 +34,7 @@ idataBANK0 CODE 0 76F 76F A 2 1
 dataBANK0 BANK0 1 65 65 A 1 1
 bssCOMMON COMMON 1 77 77 2 1 1
 config CONFIG 4 2007 2007 2 2 1
-$C:\Users\luisg\AppData\Local\Temp\xcAsqqk.o
+$C:\Users\luisg\AppData\Local\Temp\xcAsdvk.o
 idloc IDLOC 5 2000 2000 4 2 1
 reset_vec CODE 0 0 0 3 2 1
 end_init CODE 0 E E 3 2 1
@@ -83,34 +83,34 @@ STRING 779-1FFF 2
 # All other numeric values are in decimal.
 %LINETAB
 $dist/default/production\prog-micros_lab08_lg20168.X.production.o
-11 cinit CODE >505:C:\Users\luisg\AppData\Local\Temp\xcAsqqk.s
-11 cinit CODE >508:C:\Users\luisg\AppData\Local\Temp\xcAsqqk.s
-11 cinit CODE >576:C:\Users\luisg\AppData\Local\Temp\xcAsqqk.s
-12 cinit CODE >577:C:\Users\luisg\AppData\Local\Temp\xcAsqqk.s
-13 cinit CODE >578:C:\Users\luisg\AppData\Local\Temp\xcAsqqk.s
-14 cinit CODE >579:C:\Users\luisg\AppData\Local\Temp\xcAsqqk.s
-15 cinit CODE >580:C:\Users\luisg\AppData\Local\Temp\xcAsqqk.s
-16 cinit CODE >581:C:\Users\luisg\AppData\Local\Temp\xcAsqqk.s
-17 cinit CODE >582:C:\Users\luisg\AppData\Local\Temp\xcAsqqk.s
-18 cinit CODE >583:C:\Users\luisg\AppData\Local\Temp\xcAsqqk.s
-19 cinit CODE >584:C:\Users\luisg\AppData\Local\Temp\xcAsqqk.s
-1A cinit CODE >585:C:\Users\luisg\AppData\Local\Temp\xcAsqqk.s
-1F cinit CODE >589:C:\Users\luisg\AppData\Local\Temp\xcAsqqk.s
-20 cinit CODE >590:C:\Users\luisg\AppData\Local\Temp\xcAsqqk.s
-21 cinit CODE >591:C:\Users\luisg\AppData\Local\Temp\xcAsqqk.s
-22 cinit CODE >592:C:\Users\luisg\AppData\Local\Temp\xcAsqqk.s
-23 cinit CODE >593:C:\Users\luisg\AppData\Local\Temp\xcAsqqk.s
-24 cinit CODE >594:C:\Users\luisg\AppData\Local\Temp\xcAsqqk.s
-25 cinit CODE >595:C:\Users\luisg\AppData\Local\Temp\xcAsqqk.s
-26 cinit CODE >596:C:\Users\luisg\AppData\Local\Temp\xcAsqqk.s
-27 cinit CODE >597:C:\Users\luisg\AppData\Local\Temp\xcAsqqk.s
-28 cinit CODE >598:C:\Users\luisg\AppData\Local\Temp\xcAsqqk.s
-29 cinit CODE >599:C:\Users\luisg\AppData\Local\Temp\xcAsqqk.s
-2A cinit CODE >602:C:\Users\luisg\AppData\Local\Temp\xcAsqqk.s
-2B cinit CODE >603:C:\Users\luisg\AppData\Local\Temp\xcAsqqk.s
-2C cinit CODE >609:C:\Users\luisg\AppData\Local\Temp\xcAsqqk.s
-2C cinit CODE >611:C:\Users\luisg\AppData\Local\Temp\xcAsqqk.s
-2D cinit CODE >612:C:\Users\luisg\AppData\Local\Temp\xcAsqqk.s
+11 cinit CODE >505:C:\Users\luisg\AppData\Local\Temp\xcAsdvk.s
+11 cinit CODE >508:C:\Users\luisg\AppData\Local\Temp\xcAsdvk.s
+11 cinit CODE >576:C:\Users\luisg\AppData\Local\Temp\xcAsdvk.s
+12 cinit CODE >577:C:\Users\luisg\AppData\Local\Temp\xcAsdvk.s
+13 cinit CODE >578:C:\Users\luisg\AppData\Local\Temp\xcAsdvk.s
+14 cinit CODE >579:C:\Users\luisg\AppData\Local\Temp\xcAsdvk.s
+15 cinit CODE >580:C:\Users\luisg\AppData\Local\Temp\xcAsdvk.s
+16 cinit CODE >581:C:\Users\luisg\AppData\Local\Temp\xcAsdvk.s
+17 cinit CODE >582:C:\Users\luisg\AppData\Local\Temp\xcAsdvk.s
+18 cinit CODE >583:C:\Users\luisg\AppData\Local\Temp\xcAsdvk.s
+19 cinit CODE >584:C:\Users\luisg\AppData\Local\Temp\xcAsdvk.s
+1A cinit CODE >585:C:\Users\luisg\AppData\Local\Temp\xcAsdvk.s
+1F cinit CODE >589:C:\Users\luisg\AppData\Local\Temp\xcAsdvk.s
+20 cinit CODE >590:C:\Users\luisg\AppData\Local\Temp\xcAsdvk.s
+21 cinit CODE >591:C:\Users\luisg\AppData\Local\Temp\xcAsdvk.s
+22 cinit CODE >592:C:\Users\luisg\AppData\Local\Temp\xcAsdvk.s
+23 cinit CODE >593:C:\Users\luisg\AppData\Local\Temp\xcAsdvk.s
+24 cinit CODE >594:C:\Users\luisg\AppData\Local\Temp\xcAsdvk.s
+25 cinit CODE >595:C:\Users\luisg\AppData\Local\Temp\xcAsdvk.s
+26 cinit CODE >596:C:\Users\luisg\AppData\Local\Temp\xcAsdvk.s
+27 cinit CODE >597:C:\Users\luisg\AppData\Local\Temp\xcAsdvk.s
+28 cinit CODE >598:C:\Users\luisg\AppData\Local\Temp\xcAsdvk.s
+29 cinit CODE >599:C:\Users\luisg\AppData\Local\Temp\xcAsdvk.s
+2A cinit CODE >602:C:\Users\luisg\AppData\Local\Temp\xcAsdvk.s
+2B cinit CODE >603:C:\Users\luisg\AppData\Local\Temp\xcAsdvk.s
+2C cinit CODE >609:C:\Users\luisg\AppData\Local\Temp\xcAsdvk.s
+2C cinit CODE >611:C:\Users\luisg\AppData\Local\Temp\xcAsdvk.s
+2D cinit CODE >612:C:\Users\luisg\AppData\Local\Temp\xcAsdvk.s
 4 intentry CODE >124:C:\Users\luisg\MPLABXProjects\prog-micros_lab08_lg20168.X\lab08_main-20168.c
 578 text10 CODE >124:C:\Users\luisg\MPLABXProjects\prog-micros_lab08_lg20168.X\lab08_main-20168.c
 578 text10 CODE >125:C:\Users\luisg\MPLABXProjects\prog-micros_lab08_lg20168.X\lab08_main-20168.c
@@ -563,23 +563,23 @@ FE text6 CODE >124:C:\Program Files\Microchip\xc8\v2.35\pic\sources\c90\common\s
 716 maintext CODE >176:C:\Users\luisg\MPLABXProjects\prog-micros_lab08_lg20168.X\lab08_main-20168.c
 718 maintext CODE >178:C:\Users\luisg\MPLABXProjects\prog-micros_lab08_lg20168.X\lab08_main-20168.c
 71F maintext CODE >179:C:\Users\luisg\MPLABXProjects\prog-micros_lab08_lg20168.X\lab08_main-20168.c
-74F inittext CODE >550:C:\Users\luisg\AppData\Local\Temp\xcAsqqk.s
-74F inittext CODE >551:C:\Users\luisg\AppData\Local\Temp\xcAsqqk.s
-750 inittext CODE >552:C:\Users\luisg\AppData\Local\Temp\xcAsqqk.s
-751 inittext CODE >553:C:\Users\luisg\AppData\Local\Temp\xcAsqqk.s
-752 inittext CODE >554:C:\Users\luisg\AppData\Local\Temp\xcAsqqk.s
-753 inittext CODE >561:C:\Users\luisg\AppData\Local\Temp\xcAsqqk.s
-753 inittext CODE >562:C:\Users\luisg\AppData\Local\Temp\xcAsqqk.s
-758 inittext CODE >563:C:\Users\luisg\AppData\Local\Temp\xcAsqqk.s
-759 inittext CODE >564:C:\Users\luisg\AppData\Local\Temp\xcAsqqk.s
-75A inittext CODE >565:C:\Users\luisg\AppData\Local\Temp\xcAsqqk.s
-75B inittext CODE >566:C:\Users\luisg\AppData\Local\Temp\xcAsqqk.s
-75C inittext CODE >567:C:\Users\luisg\AppData\Local\Temp\xcAsqqk.s
-75D inittext CODE >568:C:\Users\luisg\AppData\Local\Temp\xcAsqqk.s
-75E inittext CODE >569:C:\Users\luisg\AppData\Local\Temp\xcAsqqk.s
-75F inittext CODE >570:C:\Users\luisg\AppData\Local\Temp\xcAsqqk.s
-760 inittext CODE >571:C:\Users\luisg\AppData\Local\Temp\xcAsqqk.s
-761 inittext CODE >572:C:\Users\luisg\AppData\Local\Temp\xcAsqqk.s
+74F inittext CODE >550:C:\Users\luisg\AppData\Local\Temp\xcAsdvk.s
+74F inittext CODE >551:C:\Users\luisg\AppData\Local\Temp\xcAsdvk.s
+750 inittext CODE >552:C:\Users\luisg\AppData\Local\Temp\xcAsdvk.s
+751 inittext CODE >553:C:\Users\luisg\AppData\Local\Temp\xcAsdvk.s
+752 inittext CODE >554:C:\Users\luisg\AppData\Local\Temp\xcAsdvk.s
+753 inittext CODE >561:C:\Users\luisg\AppData\Local\Temp\xcAsdvk.s
+753 inittext CODE >562:C:\Users\luisg\AppData\Local\Temp\xcAsdvk.s
+758 inittext CODE >563:C:\Users\luisg\AppData\Local\Temp\xcAsdvk.s
+759 inittext CODE >564:C:\Users\luisg\AppData\Local\Temp\xcAsdvk.s
+75A inittext CODE >565:C:\Users\luisg\AppData\Local\Temp\xcAsdvk.s
+75B inittext CODE >566:C:\Users\luisg\AppData\Local\Temp\xcAsdvk.s
+75C inittext CODE >567:C:\Users\luisg\AppData\Local\Temp\xcAsdvk.s
+75D inittext CODE >568:C:\Users\luisg\AppData\Local\Temp\xcAsdvk.s
+75E inittext CODE >569:C:\Users\luisg\AppData\Local\Temp\xcAsdvk.s
+75F inittext CODE >570:C:\Users\luisg\AppData\Local\Temp\xcAsdvk.s
+760 inittext CODE >571:C:\Users\luisg\AppData\Local\Temp\xcAsdvk.s
+761 inittext CODE >572:C:\Users\luisg\AppData\Local\Temp\xcAsdvk.s
 # %SYMTAB Section
 # An enumeration of all symbols in the program.
 # The beginning of the section is indicated by %SYMTAB.
@@ -605,13 +605,13 @@ __Heeprom_data 0 0 EEDATA 3 eeprom_data -
 __Hstrings 0 0 ABS 0 strings -
 _T0IF 5A 0 ABS 0 - dist/default/production\prog-micros_lab08_lg20168.X.production.o
 _TMR0 1 0 ABS 0 - dist/default/production\prog-micros_lab08_lg20168.X.production.o
-___sp 0 0 STACK 2 stack C:\Users\luisg\AppData\Local\Temp\xcAsqqk.o
+___sp 0 0 STACK 2 stack C:\Users\luisg\AppData\Local\Temp\xcAsdvk.o
 _huns 5E 0 BANK0 1 bssBANK0 dist/default/production\prog-micros_lab08_lg20168.X.production.o
 _main DD4 0 CODE 0 maintext dist/default/production\prog-micros_lab08_lg20168.X.production.o
 _ones 5A 0 BANK0 1 bssBANK0 dist/default/production\prog-micros_lab08_lg20168.X.production.o
 _tens 5C 0 BANK0 1 bssBANK0 dist/default/production\prog-micros_lab08_lg20168.X.production.o
 btemp 7E 0 ABS 0 - dist/default/production\prog-micros_lab08_lg20168.X.production.o
-start 1C 0 CODE 0 init C:\Users\luisg\AppData\Local\Temp\xcAsqqk.o
+start 1C 0 CODE 0 init C:\Users\luisg\AppData\Local\Temp\xcAsdvk.o
 ___flmul@aexp 3C 0 BANK0 1 cstackBANK0 dist/default/production\prog-micros_lab08_lg20168.X.production.o
 ___flmul@bexp 41 0 BANK0 1 cstackBANK0 dist/default/production\prog-micros_lab08_lg20168.X.production.o
 ___flmul@prod 42 0 BANK0 1 cstackBANK0 dist/default/production\prog-micros_lab08_lg20168.X.production.o
@@ -622,12 +622,12 @@ _OPTION_REGbits 81 0 ABS 0 - dist/default/production\prog-micros_lab08_lg20168.X
 __LidataBANK0 0 0 ABS 0 idataBANK0 -
 __Hpowerup 0 0 CODE 0 powerup -
 ___awmod@sign 25 0 BANK0 1 cstackBANK0 dist/default/production\prog-micros_lab08_lg20168.X.production.o
-intlevel0 0 0 ENTRY 0 functab C:\Users\luisg\AppData\Local\Temp\xcAsqqk.o
-intlevel1 0 0 ENTRY 0 functab C:\Users\luisg\AppData\Local\Temp\xcAsqqk.o
-intlevel2 0 0 ENTRY 0 functab C:\Users\luisg\AppData\Local\Temp\xcAsqqk.o
-intlevel3 0 0 ENTRY 0 functab C:\Users\luisg\AppData\Local\Temp\xcAsqqk.o
-intlevel4 0 0 ENTRY 0 functab C:\Users\luisg\AppData\Local\Temp\xcAsqqk.o
-intlevel5 0 0 ENTRY 0 functab C:\Users\luisg\AppData\Local\Temp\xcAsqqk.o
+intlevel0 0 0 ENTRY 0 functab C:\Users\luisg\AppData\Local\Temp\xcAsdvk.o
+intlevel1 0 0 ENTRY 0 functab C:\Users\luisg\AppData\Local\Temp\xcAsdvk.o
+intlevel2 0 0 ENTRY 0 functab C:\Users\luisg\AppData\Local\Temp\xcAsdvk.o
+intlevel3 0 0 ENTRY 0 functab C:\Users\luisg\AppData\Local\Temp\xcAsdvk.o
+intlevel4 0 0 ENTRY 0 functab C:\Users\luisg\AppData\Local\Temp\xcAsdvk.o
+intlevel5 0 0 ENTRY 0 functab C:\Users\luisg\AppData\Local\Temp\xcAsdvk.o
 __LbssCOMMON 0 0 ABS 0 bssCOMMON -
 _OSCCONbits 8F 0 ABS 0 - dist/default/production\prog-micros_lab08_lg20168.X.production.o
 wtemp0 7E 0 ABS 0 - dist/default/production\prog-micros_lab08_lg20168.X.production.o
@@ -647,14 +647,14 @@ __end_of___flmul 722 0 CODE 0 text6 dist/default/production\prog-micros_lab08_lg
 __end_of___fltol AF0 0 CODE 0 text5 dist/default/production\prog-micros_lab08_lg20168.X.production.o
 __end_of_digits 9F8 0 CODE 0 text3 dist/default/production\prog-micros_lab08_lg20168.X.production.o
 __Umul8_16@multiplicand 75 0 COMMON 1 cstackCOMMON dist/default/production\prog-micros_lab08_lg20168.X.production.o
-___stackhi 0 0 ABS 0 - C:\Users\luisg\AppData\Local\Temp\xcAsqqk.o
-___stacklo 0 0 ABS 0 - C:\Users\luisg\AppData\Local\Temp\xcAsqqk.o
+___stackhi 0 0 ABS 0 - C:\Users\luisg\AppData\Local\Temp\xcAsdvk.o
+___stacklo 0 0 ABS 0 - C:\Users\luisg\AppData\Local\Temp\xcAsdvk.o
 ___flmul@a 32 0 BANK0 1 cstackBANK0 dist/default/production\prog-micros_lab08_lg20168.X.production.o
 ___flmul@b 2E 0 BANK0 1 cstackBANK0 dist/default/production\prog-micros_lab08_lg20168.X.production.o
 start_initialization 22 0 CODE 0 cinit dist/default/production\prog-micros_lab08_lg20168.X.production.o
 __pcstackBANK0 20 0 BANK0 1 cstackBANK0 dist/default/production\prog-micros_lab08_lg20168.X.production.o
 _tmr0_setup EC4 0 CODE 0 text1 dist/default/production\prog-micros_lab08_lg20168.X.production.o
-___int_sp 0 0 STACK 2 stack C:\Users\luisg\AppData\Local\Temp\xcAsqqk.o
+___int_sp 0 0 STACK 2 stack C:\Users\luisg\AppData\Local\Temp\xcAsdvk.o
 __Hbank0 0 0 ABS 0 bank0 -
 __Hbank1 0 0 ABS 0 bank1 -
 __Hbank2 0 0 ABS 0 bank2 -
@@ -712,7 +712,7 @@ _digits 89A 0 CODE 0 text3 dist/default/production\prog-micros_lab08_lg20168.X.p
 ___xxtofl 722 0 CODE 0 text4 dist/default/production\prog-micros_lab08_lg20168.X.production.o
 __end_of_isr BCC 0 CODE 0 text10 dist/default/production\prog-micros_lab08_lg20168.X.production.o
 __Lintentry 8 0 CODE 0 intentry -
-reset_vec 0 0 CODE 0 reset_vec C:\Users\luisg\AppData\Local\Temp\xcAsqqk.o
+reset_vec 0 0 CODE 0 reset_vec C:\Users\luisg\AppData\Local\Temp\xcAsdvk.o
 __end_of___xxtofl 89A 0 CODE 0 text4 dist/default/production\prog-micros_lab08_lg20168.X.production.o
 __pdataBANK0 65 0 BANK0 1 dataBANK0 dist/default/production\prog-micros_lab08_lg20168.X.production.o
 __LbssBANK0 0 0 ABS 0 bssBANK0 -

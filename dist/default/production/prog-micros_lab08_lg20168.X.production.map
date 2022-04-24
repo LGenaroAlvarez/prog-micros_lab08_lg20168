@@ -5,10 +5,10 @@ Linker command line:
 -W-3 --edf=C:\Program Files\Microchip\xc8\v2.35\pic\dat\en_msgs.txt -cn \
   -h+dist/default/production\prog-micros_lab08_lg20168.X.production.sym \
   --cmf=dist/default/production\prog-micros_lab08_lg20168.X.production.cmf \
-  -z -Q16F887 -oC:\Users\luisg\AppData\Local\Temp\xcAsqqk.4 \
+  -z -Q16F887 -oC:\Users\luisg\AppData\Local\Temp\xcAsdvk.4 \
   --defsym=__MPLAB_BUILD=1 \
   -Mdist/default/production/prog-micros_lab08_lg20168.X.production.map \
-  --md=C:\Users\luisg\AppData\Local\Temp\xcAsqqk.dat -E1 -ver=XC8 Compiler \
+  --md=C:\Users\luisg\AppData\Local\Temp\xcAsdvk.dat -E1 -ver=XC8 Compiler \
   --acfsm=1493 -ACODE=00h-07FFhx4 -ASTRCODE=00h-01FFFh -ASTRING=00h-0FFhx32 \
   -ACONST=00h-0FFhx32 -AENTRY=00h-0FFhx32 -ACOMMON=070h-07Fh \
   -ABANK0=020h-06Fh -ABANK1=0A0h-0EFh -ABANK2=0110h-016Fh \
@@ -19,7 +19,7 @@ Linker command line:
   -AEEDATA=00h-0FFh/02100h -peeprom_data=EEDATA -DEEDATA=2 -DCODE=2 \
   -DSTRCODE=2 -DSTRING=2 -DCONST=2 -DENTRY=2 \
   -preset_vec=00h,intentry=04h,init,end_init -ppowerup=CODE -pcinit=CODE \
-  -pfunctab=ENTRY -k C:\Users\luisg\AppData\Local\Temp\xcAsqqk.o \
+  -pfunctab=ENTRY -k C:\Users\luisg\AppData\Local\Temp\xcAsdvk.o \
   dist/default/production\prog-micros_lab08_lg20168.X.production.o 
 
 Object code version is 3.11
@@ -29,7 +29,7 @@ Machine type is 16F887
 
 
                 Name                               Link     Load   Length Selector   Space Scale
-C:\Users\luisg\AppData\Local\Temp\xcAsqqk.o
+C:\Users\luisg\AppData\Local\Temp\xcAsdvk.o
                 end_init                              E        E        3        8       0
                 reset_vec                             0        0        3        0       0
                 config                             2007     2007        2        0       4

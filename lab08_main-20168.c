@@ -35,7 +35,7 @@
 #define _XTAL_FREQ 4000000
 
 //DEFINICIONES GENERALES
-#define tmr0_val 248
+#define tmr0_val 248            // PARA INTERRUPCIONES CADA 2mS
 #define disp1 PORTEbits.RE2
 #define disp2 PORTEbits.RE1
 #define disp3 PORTEbits.RE0  
@@ -113,7 +113,7 @@ void tmr0_setup(void){
 }
 
 int digits(void){
-    volt_val = var*((float)5/255)*(100);
+    volt_val = var*((float)5/255)*(100);  // CONVERSION DE VALOR DE 255 A 500 PARA VOLTAJE
     mod = volt_val%100;        // CALCULO DEL MODULO DEL CONTADOR PARA AISLAR DECENAS Y UNIDADES
     huns = volt_val/100;       // DIVISION DE CONTADOR PARA DETERMINAR CENTENAS
     tens = mod/10;              // DIVISION DEL MODULO DEL CONTADOR PARA DETERMINAR DECENAS
@@ -137,23 +137,23 @@ void __interrupt() isr(void){
         TMR0 = tmr0_val;        // REINICIAR TMR0
         PORTE = 0;              // PREPARAR PORTE PARA SELECCION DE DISPLAYS
         if (disp_flag == 0){            //
-            PORTC = (index[ones]);      //
-            disp3 = 0;                  //
-            disp1 = 1;                  //
-            disp_flag = 1;              //
+            PORTC = (index[ones]);      // PASAR VALOR DE UNIDADES A DISPLAY USANDO INDICE
+            disp3 = 0;                  // APAGAR DISPLAY3
+            disp1 = 1;                  // ENCENDER DISPLAY1 (CURRENT DISP)
+            disp_flag = 1;              // CAMBIAR DE DISPLAY
         }
-        else if (disp_flag == 1){       //
-            PORTC = (index[tens]);      //
-            disp1 = 0;                  //
-            disp2 = 1;                  //
-            disp_flag = 2;              //
+        else if (disp_flag == 1){       // 
+            PORTC = (index[tens]);      // PASAR VALOR DE DECENAS A DISPLAY USANDO INDICE
+            disp1 = 0;                  // APAGAR DISPLAY1
+            disp2 = 1;                  // ENCENDER DISPLAY2 (CURRENT DISP)
+            disp_flag = 2;              // CAMBIAR DE DISPLAY
         }
         else if (disp_flag == 2){       //
-            PORTC = (index[huns]);      //
-            PORTCbits.RC7 = 1;
-            disp2 = 0;                  //
-            disp3 = 1;                  //
-            disp_flag = 0;              //
+            PORTC = (index[huns]);      // PASAR VALOR DE CENTENAS A DISPLAY USANDO INDICE
+            PORTCbits.RC7 = 1;          // ACTIVAR PIN PARA DP
+            disp2 = 0;                  // APAGAR DISPLAY 2
+            disp3 = 1;                  // ENCENDER DISPLAY 3 (CURRENT DISP)
+            disp_flag = 0;              // CAMBIAR DE DISPLAY
         }
     }
     return;
