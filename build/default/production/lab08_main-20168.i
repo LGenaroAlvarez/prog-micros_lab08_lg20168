@@ -2747,13 +2747,25 @@ extern int printf(const char *, ...);
 
 # 1 "C:\\Program Files\\Microchip\\xc8\\v2.35\\pic\\include\\c90\\stdint.h" 1 3
 # 32 "lab08_main-20168.c" 2
+# 44 "lab08_main-20168.c"
+uint8_t mod = 0;
+int var;
+int volt_val;
+int huns = 0;
+int tens = 0;
+int ones = 0;
+int disp_flag = 0;
 
 
-
-
+char index[10] = {0b00111111, 0b00000110, 0b01011011, 0b01001111, 0b01100110,
+0b01101101, 0b01111101, 0b00000111, 0b01111111, 0b01101111};
 
 
 void setup(void);
+
+void tmr0_setup(void);
+
+int digits(void);
 
 
 void setup(void){
@@ -2765,8 +2777,10 @@ void setup(void){
 
     TRISC = 0;
     TRISD = 0;
+    TRISE = 0;
     PORTC = 0;
     PORTD = 0;
+    PORTE = 0;
 
 
     OSCCONbits.IRCF = 0b0110;
@@ -2786,20 +2800,68 @@ void setup(void){
 
     INTCONbits.GIE = 1;
     INTCONbits.PEIE = 1;
+    INTCONbits.T0IE = 1;
+    INTCONbits.T0IF = 0;
     PIE1bits.ADIE = 1;
     PIR1bits.ADIF = 0;
+}
+
+
+void tmr0_setup(void){
+    OPTION_REGbits.T0CS = 0;
+    OPTION_REGbits.PSA = 0;
+    OPTION_REGbits.PS0 = 1;
+    OPTION_REGbits.PS1 = 1;
+    OPTION_REGbits.PS2 = 1;
+
+    INTCONbits.T0IF = 0;
+    TMR0 = 248;
+    return;
+}
+
+int digits(void){
+    volt_val = var*((float)5/255)*(100);
+    mod = volt_val%100;
+    huns = volt_val/100;
+    tens = mod/10;
+    ones = mod%10;
 }
 
 
 void __attribute__((picinterrupt(("")))) isr(void){
     if (PIR1bits.ADIF){
         if (ADCON0bits.CHS == 0){
-            PORTC = ADRESH;
+            var = ADRESH;
         }
         else if (ADCON0bits.CHS == 1){
             PORTD = ADRESH;
         }
         PIR1bits.ADIF = 0;
+    }
+
+    else if(T0IF){
+        INTCONbits.T0IF = 0;
+        TMR0 = 248;
+        PORTE = 0;
+        if (disp_flag == 0){
+            PORTC = (index[ones]);
+            PORTEbits.RE0 = 0;
+            PORTEbits.RE2 = 1;
+            disp_flag = 1;
+        }
+        else if (disp_flag == 1){
+            PORTC = (index[tens]);
+            PORTEbits.RE2 = 0;
+            PORTEbits.RE1 = 1;
+            disp_flag = 2;
+        }
+        else if (disp_flag == 2){
+            PORTC = (index[huns]);
+            PORTCbits.RC7 = 1;
+            PORTEbits.RE1 = 0;
+            PORTEbits.RE0 = 1;
+            disp_flag = 0;
+        }
     }
     return;
 }
@@ -2808,9 +2870,11 @@ void __attribute__((picinterrupt(("")))) isr(void){
 void main(void) {
 
     setup();
+    tmr0_setup();
 
 
     while(1){
+        digits();
         if (ADCON0bits.GO == 0){
             if (ADCON0bits.CHS == 0){
                 ADCON0bits.CHS = 0b0001;
